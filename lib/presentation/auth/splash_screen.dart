@@ -11,8 +11,8 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Pindah ke Login setelah 2 detik
-    Future.delayed(const Duration(seconds: 2), () {
+    // Pindah ke Login setelah 3 detik
+    Future.delayed(const Duration(seconds: 3), () {
       if (mounted) Navigator.pushReplacementNamed(context, '/login');
     });
   }
@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Icon(Icons.confirmation_number, size: 100, color: Colors.blue),
             SizedBox(height: 16),
             Text("E-Ticketing Helpdesk", style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-            Text("DIV Teknik Informatika UNAIR"),
+            Text("Teknik Informatika UNAIR"),
           ],
         ),
       ),
